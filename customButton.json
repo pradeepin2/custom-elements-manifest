@@ -1,0 +1,65 @@
+{
+    "schemaVersion": "1.0.0",
+    "readme": "",
+    "modules": [
+      {
+        "kind": "javascript-module",
+        "path": "src/my-element.js",
+        "declarations": [
+          {
+            "kind": "class",
+            "description": "",
+            "name": "customButton",
+            "members": [
+              {
+                "kind": "method",
+                "name": "updateColor"
+              },
+              {
+                "kind": "method",
+                "name": "changeColor",
+                "parameters": [
+                  {
+                    "name": "newColor"
+                  }
+                ]
+              },
+              {
+                "kind": "field",
+                "name": "innerHTML",
+                "default": "`<button>Custom Button</button>`"
+              },
+              {
+                "kind": "field",
+                "name": "_color",
+                "type": {
+                  "text": "string"
+                },
+                "default": "'red'"
+              }
+            ],
+            "attributes": [
+              {
+                "name": "color"
+              }
+            ],
+            "superclass": {
+              "name": "HTMLElement"
+            },
+            "tagName": "custom-button",
+            "customElement": true
+          }
+        ],
+        "exports": [
+          {
+            "kind": "custom-element-definition",
+            "name": "custom-button",
+            "declaration": {
+              "name": "customButton",
+              "module": "src/my-element.js"
+            }
+          }
+        ]
+      }
+    ]
+  }

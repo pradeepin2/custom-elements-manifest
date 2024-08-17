@@ -1,0 +1,18 @@
+{
+    "name": "custom-elements-manifest",
+    "version": "1.0.0",
+    "description": "An example demonstrating Custom elements manifest for a web component",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "author": "Pradeep Kumar Saraswathi",
+    "license": "MIT",
+    "devDependencies": {
+        "@custom-elements-manifest/analyzer": "^0.10.3"
+    },
+    "dependencies": {
+        "api-viewer-element": "^1.0.0-pre.10"
+    }
+}
